@@ -1,0 +1,35 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Styling the body element */
+body {
+    background-color: rgba(235, 247, 222, 0.42); /* Light green background color */
+    font-family: "Poppins", sans-serif; /* Using Poppins font */
+}
+
+/* Styling the container div */
+.container {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Styling the custom button */
+.custom-button {
+    font-size: 20px; /* Font size 20 pixels */
+    color: rgba(0, 0, 0, 0.7); /* Light black text color */
+    padding: 15px 45px; /* Padding top and bottom 15 pixels, left and right 45 pixels */
+    background-color: transparent; /* Transparent background */
+    background-size: 0%; /* Initially no gradient background */
+    background-image: linear-gradient(to right, #ED4264, #FFEDBC); /* Linear gradient background */
+    transition: all 0.5s ease; /* Smooth transition effect */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for custom button */
+.custom-button:hover {
+    background-size: 100%; /* Full gradient background on hover */
+}

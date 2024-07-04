@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Button</title>
+    <!-- Google Fonts থেকে "Poppins" ফন্ট ইমপোর্ট -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* বডি এলিমেন্টের জন্য স্টাইল সেট করা হয়েছে */
+        body {
+            background-color: rgba(235, 247, 222, 0.42); /* ব্যাকগ্রাউন্ড কালার হালকা সবুজ রঙের */
+            font-family: 'Poppins', sans-serif; /* ফন্ট ফ্যামিলি পপিন্স সেট করা হয়েছে */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ডিভ এলিমেন্টের জন্য স্টাইল */
+        .container {
+            width: 100%; /* প্রস্থ ১০০% */
+            height: 100vh; /* উচ্চতা পুরো ভিউপোর্টের উচ্চতা */
+            display: flex; /* ফ্লেক্সবক্স লেআউট */
+            justify-content: center; /* কন্টেন্ট সেন্টার করে */
+            align-items: center; /* আইটেমগুলো সেন্টার করে */
+        }
+
+        /* বাটনের জন্য স্টাইল */
+        .custom-button {
+            font-size: 20px; /* ফন্ট সাইজ ২০ পিক্সেল */
+            color: rgba(0, 0, 0, 0.7); /* টেক্সট কালার হালকা কালো */
+            padding: 15px 45px; /* প্যাডিং উপরে এবং নিচে ১৫ পিক্সেল, বামে এবং ডানে ৪৫ পিক্সেল */
+            background-color: transparent; /* ব্যাকগ্রাউন্ড ট্রান্সপারেন্ট */
+            background-size: 0%; /* ব্যাকগ্রাউন্ড সাইজ শূন্য */
+            background-image: linear-gradient(to right, #ED4264, #FFEDBC); /* লিনিয়ার গ্রাডিয়েন্ট ব্যাকগ্রাউন্ড ইমেজ */
+            transition: all 0.5s ease; /* ট্রানজিশন ইফেক্ট ০.৫ সেকেন্ড */
+            border: none;
+            cursor: pointer;
+        }
+
+        /* হোভার ইফেক্টের জন্য স্টাইল */
+        .custom-button:hover {
+            background-size: 100%; /* ব্যাকগ্রাউন্ড সাইজ ১০০% */
+        }
+    </style>
+</head>
+<body>
+    <!-- ডিভ এলিমেন্ট -->
+    <div class="container">
+        <!-- বাটন এলিমেন্ট -->
+        <button class="custom-button">Hover Me</button>
+    </div>
+</body>
+</html>
